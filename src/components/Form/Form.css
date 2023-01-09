@@ -1,0 +1,25 @@
+.flight-form {
+    padding: 0 20px;
+    position: relative; 
+}
+#flight-form-p-2 .form-radio-flex, #flight-form-p-2 .form-flex, #flight-form-p-2 .form-group input {
+    width: 534px; 
+}
+#flight-form-p-2 #credit_card {
+    width: 275px; 
+}
+#flight-form-p-2 #cvc {
+    width: 143px; 
+}
+@media screen and (max-width: 768px){
+    #flight-form-p-2 #credit_card, #flight-form-p-2 #cvc, #flight-form-p-2 .form-radio-flex, #flight-form-p-2 .form-flex, #flight-form-p-2 .form-group input, .form-row .form-group label {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flight-form {
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
+} 

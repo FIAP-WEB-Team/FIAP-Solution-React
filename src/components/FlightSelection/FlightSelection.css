@@ -1,0 +1,27 @@
+/* ::selection{
+    background: #d5bbf7;
+    // background: #1abc9c;    
+} */
+.card{
+    /* max-width: 350px; */
+    /* height: 100vh; */
+    overflow-y: auto;
+    max-height: 60vh;
+    width: 99%;
+    margin: 10px auto;
+    /* background: #fff; */
+    border: 1px solid #EBEBEB;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.card .cart-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.card .content-card{
+    margin-top: 0px;
+    padding: 15px;
+}

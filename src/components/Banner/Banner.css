@@ -1,0 +1,10 @@
+.banner {
+    background-color: #c0baba;
+    height: 115px;
+}   
+
+.banner img {
+    width: 150px;
+    margin: 10px;
+    float: left;
+}

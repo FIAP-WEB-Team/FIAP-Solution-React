@@ -1,0 +1,18 @@
+.button-custom {
+    width: 130px;
+    height: 40px;
+    font-weight: 600;
+    position: relative;
+    top: -8px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button-custom:hover, .button-custom:focus {
+    opacity: 1;
+    transition: 0.3s;
+}

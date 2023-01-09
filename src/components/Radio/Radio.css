@@ -1,0 +1,70 @@
+.card  label.box{
+    background: #ddd;
+    margin-top: 12px;
+    padding: 10px 12px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+#radioList1:checked ~ label.radioLabel1,
+#radioList2:checked ~ label.radioLabel2,
+#radioList3:checked ~ label.radioLabel3,
+#radioList4:checked ~ label.radioLabel4,
+#radioList5:checked ~ label.radioLabel5,
+#radioList6:checked ~ label.radioLabel6,
+#radioList7:checked ~ label.radioLabel7,
+#radioList8:checked ~ label.radioLabel8,
+#radioList9:checked ~ label.radioLabel9,
+#radioList10:checked ~ label.radioLabel10,
+#radioList11:checked ~ label.radioLabel11,
+#radioList12:checked ~ label.radioLabel12,
+#radioList13:checked ~ label.radioLabel13,
+#radioList14:checked ~ label.radioLabel14,
+#radioList15:checked ~ label.radioLabel15,
+#radioList16:checked ~ label.radioLabel16{
+    border-color: #1abc9c;
+    background: #b8f5e9;
+}
+.card  label.box:hover{
+    background: #b8f5e9;
+}
+.card  label.box .circle{
+    height: 22px;
+    width: 22px;
+    background: #ccc;
+    border: 5px solid transparent;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+#radioList1:checked ~ label.radioLabel1 .circle,
+#radioList2:checked ~ label.radioLabel2 .circle,
+#radioList3:checked ~ label.radioLabel3 .circle,
+#radioList4:checked ~ label.radioLabel4 .circle,
+#radioList5:checked ~ label.radioLabel5 .circle,
+#radioList6:checked ~ label.radioLabel6 .circle,
+#radioList7:checked ~ label.radioLabel7 .circle,
+#radioList8:checked ~ label.radioLabel8 .circle,
+#radioList9:checked ~ label.radioLabel9 .circle,
+#radioList10:checked ~ label.radioLabel10 .circle,
+#radioList11:checked ~ label.radioLabel11 .circle,
+#radioList12:checked ~ label.radioLabel12 .circle,
+#radioList13:checked ~ label.radioLabel13 .circle,
+#radioList14:checked ~ label.radioLabel14 .circle,
+#radioList15:checked ~ label.radioLabel15 .circle,
+#radioList16:checked ~ label.radioLabel16 .circle{
+    border-color: #1abc9c;
+    background: #fff;
+}
+.card label.box .plan{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.card input[type="radio"]{
+    display: none;
+}
