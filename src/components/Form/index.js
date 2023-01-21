@@ -28,7 +28,7 @@ function Form() {
 
                 <div className="steps clearfix">
                     <ul role="tablist">
-                        <li role="tab" className="flight-form-step-li first" cod="1">
+                        <li role="tab" className="flight-form-step-li first done" cod="1">
                             <a className="flight-form-step-a" href="#">
                                 <span className="current-info audible"> </span>
                                 <div className="title">

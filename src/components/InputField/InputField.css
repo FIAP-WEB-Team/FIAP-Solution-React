@@ -1,0 +1,14 @@
+@media only screen and (hover: none) and (pointer: coarse){
+
+    #flight-form-p-1 .form-label {
+        margin-right: initial;
+        width: initial;
+        text-align: initial;
+        font-size: 16px;
+    }
+
+    #flight-form-p-1 svg {
+        display: none;
+    }
+
+}

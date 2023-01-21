@@ -8,14 +8,14 @@ import { SlPeople, SlPlane } from 'react-icons/sl'
 
 const TripSelection = (props) => {
 
-    const [trecho, setTrecho] = useState('Ida');
-    const [saindo, setSaindo] = useState('');
-    const [indo, setIndo] = useState('');
-    const [dataIda, setDataIda] = useState('');
-    const [dataVolta, setDataVolta] = useState('');
-    const [passegeiro, setPassageiro] = useState('1 adulto(s)');
+    const [section, setSection] = useState('Ida');
+    const [departure, setDeparture] = useState('');
+    const [arrival, setArrival] = useState('');
+    const [departureDate, setDepartureDate] = useState('');
+    const [arrivalDate, setArrivalDate] = useState('');
+    const [passenger, setPassenger] = useState('1 adulto(s)');
 
-    const destinos = [
+    const flights = [
         {
             name: 'Brasil'
         },
@@ -35,10 +35,10 @@ const TripSelection = (props) => {
                     label="Trecho"
                     placeholder="Informe o trecho"
                     class="required"
-                    value={trecho}
+                    value={section}
                     id="trecho"
                     disabled={true}
-                    whenChanged={value => setTrecho(value)} 
+                    whenChanged={value => setSection(value)} 
                     icon={<GiRoad size={25} />}
                 />
                 <SelectOption
@@ -46,9 +46,9 @@ const TripSelection = (props) => {
                     id="saindo"
                     class="required"
                     required={true}
-                    itens={destinos.map(destino => destino.name)} 
-                    value={saindo} 
-                    whenChanged={value => setSaindo(value)}
+                    itens={flights.map(destino => destino.name)} 
+                    value={departure} 
+                    whenChanged={value => setDeparture(value)}
                     icon={<SlPlane size={25} />}
                 />
                 <SelectOption
@@ -56,9 +56,9 @@ const TripSelection = (props) => {
                     id="indo"
                     class="required"
                     required={true}
-                    itens={destinos.map(destino => destino.name)} 
-                    value={indo} 
-                    whenChanged={value => setIndo(value)}
+                    itens={flights.map(destino => destino.name)} 
+                    value={arrival} 
+                    whenChanged={value => setArrival(value)}
                     icon={<SlPlane size={25} style = {{transform: 'rotateY(180deg)' }} />}
                 />
                 <InputField 
@@ -66,10 +66,10 @@ const TripSelection = (props) => {
                     label="Data da viagem de ida"
                     placeholder="Informe a data da viagem"
                     class="required"
-                    value={dataIda}
+                    value={departureDate}
                     id="dataIda"
                     disabled={false}
-                    whenChanged={value => setDataIda(value)} 
+                    whenChanged={value => setDepartureDate(value)} 
                     icon={<AiTwotoneCalendar size={25} />}
                 />
                 <InputField 
@@ -77,10 +77,10 @@ const TripSelection = (props) => {
                     label="Data da viagem de volta"
                     placeholder="Informe a data de volta"
                     class="required"
-                    value={dataVolta}
+                    value={arrivalDate}
                     id="dataIda"
                     disabled={false}
-                    whenChanged={value => setDataVolta(value)}
+                    whenChanged={value => setArrivalDate(value)}
                     icon={<AiTwotoneCalendar size={25} />}
                 />
                 <InputField 
@@ -88,10 +88,10 @@ const TripSelection = (props) => {
                     label="Passageiros"
                     placeholder="Informe os passageiros"
                     class="required"
-                    value={passegeiro}
+                    value={passenger}
                     id="passageiro"
                     disabled={true}
-                    whenChanged={value => setPassageiro(value)}
+                    whenChanged={value => setPassenger(value)}
                     icon={<SlPeople size={25} />}
                 />
             </div>
