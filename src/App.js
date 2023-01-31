@@ -1,16 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import Banner from './components/Banner';
-import Form from './components/Form';
+import FlightSelection from './components/FlightSelection';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Passenger from './components/Passenger';
+import TripSelection from './components/TripSelection';
 
 function App() {
 
-  return (
-    <div className="App">
-      {/* <Banner /> */}
-      <Form />  
-    </div>
-  );
+    return (
+        <div className="container">
+            <Header />
+            <div className="flight-form">
+                <div className="content clearfix">
+                    <TripSelection />
+                    <FlightSelection />
+                    <Passenger />
+                </div>
+            </div>
+            <Footer />
+        </div >
+    );
 }
 
 export default App;

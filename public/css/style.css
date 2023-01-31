@@ -806,6 +806,7 @@ fieldset {
 .fieldset-footer {
   text-align: left;
   padding: 28px 0;
+  margin: 0 10px
 }
 
 .fieldset-footer span {

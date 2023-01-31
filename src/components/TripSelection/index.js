@@ -29,7 +29,7 @@ const TripSelection = (props) => {
 
     return (
         <fieldset id="flight-form-p-1" role="tabpanel" className="flight_fieldset_aba body current" cod="1">
-            <div class="fieldset-content">
+            <div className="fieldset-content">
                 <InputField 
                     type="text"
                     label="Trecho"
@@ -52,7 +52,7 @@ const TripSelection = (props) => {
                     icon={<SlPlane size={25} />}
                 />
                 <SelectOption
-                    label="Indo de"
+                    label="Indo para"
                     id="indo"
                     class="required"
                     required={true}
