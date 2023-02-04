@@ -16,3 +16,11 @@
     opacity: 1;
     transition: 0.3s;
 }
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+    .button-custom {
+        width: 110px;
+    }
+
+}

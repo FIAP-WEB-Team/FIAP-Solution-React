@@ -16,7 +16,7 @@ const TripSelection = (props) => {
     const [passenger, setPassenger] = useState('1 adulto(s)');
 
     const flights = [
-        {
+        /* {
             name: 'Brasil'
         },
         {
@@ -24,11 +24,11 @@ const TripSelection = (props) => {
         },
         {
             name: 'Italia'
-        }
+        } */
     ];
 
     return (
-        <fieldset id="flight-form-p-1" role="tabpanel" className="flight_fieldset_aba body current" cod="1">
+        <fieldset id="flight-form-p-1" role="tabpanel" className="flight_fieldset_aba body current" cod="1" style={{ display: '' }}>
             <div className="fieldset-content">
                 <InputField 
                     type="text"
@@ -36,14 +36,14 @@ const TripSelection = (props) => {
                     placeholder="Informe o trecho"
                     class="required"
                     value={section}
-                    id="trecho"
+                    id="section"
                     disabled={true}
                     whenChanged={value => setSection(value)} 
                     icon={<GiRoad size={25} />}
                 />
                 <SelectOption
                     label="Saindo de"
-                    id="saindo"
+                    id="departure"
                     class="required"
                     required={true}
                     itens={flights.map(destino => destino.name)} 
@@ -53,7 +53,7 @@ const TripSelection = (props) => {
                 />
                 <SelectOption
                     label="Indo para"
-                    id="indo"
+                    id="arrival"
                     class="required"
                     required={true}
                     itens={flights.map(destino => destino.name)} 
@@ -67,7 +67,7 @@ const TripSelection = (props) => {
                     placeholder="Informe a data da viagem"
                     class="required"
                     value={departureDate}
-                    id="dataIda"
+                    id="departureDate"
                     disabled={false}
                     whenChanged={value => setDepartureDate(value)} 
                     icon={<AiTwotoneCalendar size={25} />}
@@ -78,7 +78,7 @@ const TripSelection = (props) => {
                     placeholder="Informe a data de volta"
                     class="required"
                     value={arrivalDate}
-                    id="dataIda"
+                    id="arrivalDate"
                     disabled={false}
                     whenChanged={value => setArrivalDate(value)}
                     icon={<AiTwotoneCalendar size={25} />}
@@ -89,7 +89,7 @@ const TripSelection = (props) => {
                     placeholder="Informe os passageiros"
                     class="required"
                     value={passenger}
-                    id="passageiro"
+                    id="passenger_count"
                     disabled={true}
                     whenChanged={value => setPassenger(value)}
                     icon={<SlPeople size={25} />}

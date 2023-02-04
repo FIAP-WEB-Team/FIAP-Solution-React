@@ -45,6 +45,27 @@
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.card label.box .sub-description {
+    width: 180px;
+}
+
+.card label.box .sub-description span{
+    float: right;
+}
+
+.card label.box .sub-description span.price{
+    float: right;
+    background: #626262;
+    color: #FFF;
+    border-radius: 10px;
+    /* width: 120px; */
+    text-align: center;
+}
+
+.card label.box .sub-description span.date-departure{
+    font-size: 16px;
+}
+
 #radioList1:checked~label.radioLabel1 .circle,
 #radioList2:checked~label.radioLabel2 .circle,
 #radioList3:checked~label.radioLabel3 .circle,
@@ -73,4 +94,16 @@
 
 .card input[type="radio"] {
     display: none;
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .card label.box {
+        font-size: 14px;
+    }
+    .card label.box .sub-description span.price{
+        margin-right: 5px;
+    }
+    .card label.box .sub-description span.date-departure{
+        font-size: 14px;
+    }
 }

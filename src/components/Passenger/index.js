@@ -40,24 +40,24 @@ function Passenger(props) {
             <form>
                 <div className={styles.formsCorner}>
                     <p>PRIMEIRO NOME: </p>
-                    <input type='text' placeholder="Digite seu nome Aqui" className={styles.inputstyle} name='tbFirstName' value={dadosUserPadrao.firstName} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, firstName: e.target.value })}></input>
+                    <input type='text' placeholder="Digite seu nome Aqui" className={`required ${styles.inputstyle}`} name='tbFirstName' value={dadosUserPadrao.firstName} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, firstName: e.target.value })}></input>
 
                 </div>
                 <div className={styles.formsCorner}>
                     <p> SOBRENOME:</p>
-                    <input type='text' placeholder="Digite seu Sobrenome Aqui" className={styles.inputstyle} name='tbLastName' value={dadosUserPadrao.secondName} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, secondName: e.target.value })}></input>
+                    <input type='text' placeholder="Digite seu Sobrenome Aqui" className={`required ${styles.inputstyle}`} name='tbLastName' value={dadosUserPadrao.secondName} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, secondName: e.target.value })}></input>
                 </div>
                 <div className={styles.formsCorner}>
                     <p> DATA DE NASCIMENTO:</p>
-                    <input type='date' name='tbBirthName' className={styles.datepicker} placeholder='dd/mm/aaaa' value={dadosUserPadrao.birthDate} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, birthDate: e.target.value })}></input>
+                    <input type='date' name='tbBirthName' className={`required ${styles.datepicker}`} placeholder='dd/mm/aaaa' value={dadosUserPadrao.birthDate} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, birthDate: e.target.value })}></input>
                 </div>
                 <div className={styles.formsCorner}>
                     <p> NACIONALIDADE:</p>
-                    <input type='text' placeholder="Digite sua nacionalidade" className={styles.inputstyle} name='tbNacionality' value={dadosUserPadrao.nacionality} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, nacionality: e.target.value })}></input>
+                    <input type='text' placeholder="Digite sua nacionalidade" className={`required ${styles.inputstyle}`} name='tbNacionality' value={dadosUserPadrao.nacionality} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, nacionality: e.target.value })}></input>
                 </div>
                 <div className={styles.formsCorner}>
                     <p> GÊNERO:</p>
-                    <input type='text' placeholder="não é obrigatório" className={styles.inputstyle} name='tbGender' value={dadosUserPadrao.gender} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, gender: e.target.value })}></input>
+                    <input type='text' placeholder="não é obrigatório" className={`${styles.inputstyle}`} name='tbGender' value={dadosUserPadrao.gender} onChange={e => setdadosUserPadrao({ ...dadosUserPadrao, gender: e.target.value })}></input>
                 </div>
             </form>
         </div >

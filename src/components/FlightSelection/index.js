@@ -4,7 +4,7 @@ import './FlightSelection.css';
 const FlightSelection = (props) => {
 
     const flightList = [
-        {
+        /* {
             id: '1',
             description: 'BRASIL -> JAPÃO',
             hour: '01/12 às 07:00'
@@ -20,15 +20,10 @@ const FlightSelection = (props) => {
             hour: '01/12 às 12:15'
         },
         {
-            id: '4',
-            description: 'VOO A DECIDIR...',
-            hour: '01/12 às 15:00'
-        },
-        {
-            id: '5',
-            description: 'VOO A DECIDIR...',
-            hour: '01/12 às 21:00'
-        }
+            id: '7',
+            description: 'ASDFASDFASD -> ITALIA',
+            hour: ''
+        } */
     ]
 
     return (
