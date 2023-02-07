@@ -1,5 +1,3 @@
-import './SelectOption.css'; 
-
 const SelectOption = (props) => {
     return (
         <div className="form-select">

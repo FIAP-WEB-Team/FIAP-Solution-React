@@ -4,33 +4,13 @@ import './FlightSelection.css';
 const FlightSelection = (props) => {
 
     const flightList = [
-        /* {
-            id: '1',
-            description: 'BRASIL -> JAPÃO',
-            hour: '01/12 às 07:00'
-        },
-        {
-            id: '2',
-            description: 'ITALIA -> BRASIL',
-            hour: '01/12 às 09:30'
-        },
-        {
-            id: '3',
-            description: 'JAPÃO -> ITALIA',
-            hour: '01/12 às 12:15'
-        },
-        {
-            id: '7',
-            description: 'ASDFASDFASD -> ITALIA',
-            hour: ''
-        } */
     ]
 
     return (
         <fieldset id="flight-form-p-2" role="tabpanel" className="flight_fieldset_aba body current" cod="2" style={{ display: 'none' }}>
-            <div class="card">
-                <div class="cart-title">Escolha seu voo</div>
-                <div class="content-card">
+            <div className="card">
+                <div className="card-title">Escolha seu voo</div>
+                <div className="content-card">
 
                     {flightList.map(list =>
                         <Radio

@@ -11,4 +11,14 @@
         display: none;
     }
 
+    #flight-form-p-3 .form-label {
+        margin-right: initial;
+        width: initial;
+        text-align: initial;
+        font-size: 16px;
+    }
+
+    #flight-form-p-3 svg {
+        display: none;
+    }
 }

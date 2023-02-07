@@ -16,7 +16,7 @@
     /* text-align: center; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-.card .cart-title{
+.card .card-title{
     font-size: 24px;
     font-weight: 500;
     margin-top: 10px;

@@ -8,8 +8,8 @@ const InputField = (props) => {
     }
 
     return (
-        <div class="form-group">
-            <label htmlFor={props.id} class="form-label">{props.label}</label>
+        <div className="form-group">
+            <label htmlFor={props.id} className="form-label">{props.label}</label>
             <input type={props.type} className={`${props.class}`} value={props.value} onChange={whenDigit} name={props.id} id={props.id} placeholder={props.placeholder} disabled={props.disabled} />
             {props.icon}
         </div> 

@@ -1,5 +1,4 @@
 import InputField from '../InputField';
-import './TripSelection.css';
 import { useState } from 'react';
 import SelectOption from '../SelectOption';
 import { AiTwotoneCalendar } from 'react-icons/ai'
@@ -15,22 +14,12 @@ const TripSelection = (props) => {
     const [arrivalDate, setArrivalDate] = useState('');
     const [passenger, setPassenger] = useState('1 adulto(s)');
 
-    const flights = [
-        /* {
-            name: 'Brasil'
-        },
-        {
-            name: 'Japao'
-        },
-        {
-            name: 'Italia'
-        } */
-    ];
+    const flights = [];
 
     return (
         <fieldset id="flight-form-p-1" role="tabpanel" className="flight_fieldset_aba body current" cod="1" style={{ display: '' }}>
             <div className="fieldset-content">
-                <InputField 
+                <InputField
                     type="text"
                     label="Trecho"
                     placeholder="Informe o trecho"
@@ -38,7 +27,7 @@ const TripSelection = (props) => {
                     value={section}
                     id="section"
                     disabled={true}
-                    whenChanged={value => setSection(value)} 
+                    whenChanged={value => setSection(value)}
                     icon={<GiRoad size={25} />}
                 />
                 <SelectOption
@@ -46,8 +35,8 @@ const TripSelection = (props) => {
                     id="departure"
                     class="required"
                     required={true}
-                    itens={flights.map(destino => destino.name)} 
-                    value={departure} 
+                    itens={flights.map(destino => destino.name)}
+                    value={departure}
                     whenChanged={value => setDeparture(value)}
                     icon={<SlPlane size={25} />}
                 />
@@ -56,12 +45,12 @@ const TripSelection = (props) => {
                     id="arrival"
                     class="required"
                     required={true}
-                    itens={flights.map(destino => destino.name)} 
-                    value={arrival} 
+                    itens={flights.map(destino => destino.name)}
+                    value={arrival}
                     whenChanged={value => setArrival(value)}
-                    icon={<SlPlane size={25} style = {{transform: 'rotateY(180deg)' }} />}
+                    icon={<SlPlane size={25} style={{ transform: 'rotateY(180deg)' }} />}
                 />
-                <InputField 
+                <InputField
                     type="date"
                     label="Data da viagem de ida"
                     placeholder="Informe a data da viagem"
@@ -69,10 +58,10 @@ const TripSelection = (props) => {
                     value={departureDate}
                     id="departureDate"
                     disabled={false}
-                    whenChanged={value => setDepartureDate(value)} 
+                    whenChanged={value => setDepartureDate(value)}
                     icon={<AiTwotoneCalendar size={25} />}
                 />
-                <InputField 
+                <InputField
                     type="date"
                     label="Data da viagem de volta"
                     placeholder="Informe a data de volta"
@@ -83,7 +72,7 @@ const TripSelection = (props) => {
                     whenChanged={value => setArrivalDate(value)}
                     icon={<AiTwotoneCalendar size={25} />}
                 />
-                <InputField 
+                <InputField
                     type="text"
                     label="Passageiros"
                     placeholder="Informe os passageiros"
