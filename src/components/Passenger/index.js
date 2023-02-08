@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import InputField from "../InputField";
+import './Passenger.css';
 
 
 const DEFAULT_USER = { firstName: 'Giba', secondName: 'Dos Santos', birthDate: '1997-10-11', nationality: 'Brasileiro', gender: 'Masculino' }
@@ -20,23 +21,20 @@ function Passenger(props) {
     return <fieldset id="flight-form-p-3" role="tabpanel" className="flight_fieldset_aba body current" cod="3" style={{ display: 'none' }}>
         <div className="card">
             <div className="card-title">Preencha os dados do Passageiro</div>
-            <div className="card-title">Giba, voce é o passageiro dessa viagem?</div>
-            <div>
-                <label> Sim</label>
-                <input type='checkbox'
-                    checked={useDefaultUser} onChange={() => toggleDefaultUser(!useDefaultUser)}></input>
-                <label> Não</label>
-                <input type='checkbox' name="rd"
-                    checked={!useDefaultUser} onChange={() => toggleDefaultUser(!useDefaultUser)}></input>
-
-            </div>
+            <div className="card-subtitle">Giba, voce é o passageiro dessa viagem?</div>
+            <input type='checkbox' id='yesCheck'
+                checked={useDefaultUser} onChange={() => toggleDefaultUser(!useDefaultUser)}></input>
+            <label htmlFor='yesCheck'>Sim</label>
+            <input type='checkbox' name="rd" id='noCheck'
+                checked={!useDefaultUser} onChange={() => toggleDefaultUser(!useDefaultUser)}></input>
+            <label htmlFor='noCheck'>Não</label>
         </div>
         <div className="fieldset-content">
             <InputField
                 type="text"
                 label="Primeiro Nome"
                 placeholder="Digite seu nome aqui"
-                className="required"
+                class="required"
                 id='tbFirstName'
                 value={userData.firstName}
                 whenChanged={value => setUserData({ ...userData, firstName: value })} />
@@ -44,7 +42,7 @@ function Passenger(props) {
                 type="text"
                 label="Sobrenome"
                 placeholder="Digite seu sobrenome aqui"
-                className="required"
+                class="required"
                 id='tbLastName'
                 value={userData.secondName}
                 whenChanged={value => setUserData({ ...userData, secondName: value })} />
@@ -52,7 +50,7 @@ function Passenger(props) {
                 type="date"
                 label="Data de nascimento"
                 placeholder='dd/mm/aaaa'
-                className="required"
+                class="required"
                 id='tbBirthDate'
                 value={userData.birthDate}
                 whenChanged={value => setUserData({ ...userData, birthDate: value })} />
@@ -60,7 +58,7 @@ function Passenger(props) {
                 type="text"
                 label="Nacionalidade"
                 placeholder="Digite sua nacionalidade"
-                className="required"
+                class="required"
                 id='tbNationality'
                 value={userData.nationality}
                 whenChanged={value => setUserData({ ...userData, nationality: value })} />

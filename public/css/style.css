@@ -697,7 +697,6 @@ fieldset {
 
 .steps ul .done a .number {
   position: relative;
-  font-size: 0px;
   border: 2px solid #F24E1E;
 }
 
@@ -713,7 +712,6 @@ fieldset {
   font-size: 14px;
   color: #F24E1E;
   font-family: 'Material-Design-Iconic-Font';
-  content: '\f26b';
   font-weight: bold;
 }
 
@@ -721,9 +719,7 @@ fieldset {
   position: absolute;
   bottom: 14px;
   width: 100%;
-  /* text-align: right; */
   padding: 0 20px;
-  /* margin: 0 15px; */
   right: 0;
 }
 

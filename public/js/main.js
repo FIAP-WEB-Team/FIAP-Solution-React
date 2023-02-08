@@ -1,5 +1,4 @@
 (function ($) {
-    // const cors = 'https://cors-anywhere.herokuapp.com/';
     const cors = 'https://corsanywhere.herokuapp.com/';
 
     $(document).ready(async function () {
@@ -69,7 +68,11 @@
         }
 
         if (error > 0) {
-            $.notify("Preencha todos os campos para prosseguir!", "warn");
+            if (step == "2")
+                var errorMsg = "Selecione um voo para prosseguir!"
+            else
+                var errorMsg = "Preencha todos os campos para prosseguir!"
+            $.notify(errorMsg, "warn");
             return false;
         } else {
             return true;
@@ -104,7 +107,7 @@
         }
 
         $('.flight_fieldset_aba[cod="' + step + '"]').css({ 'display': '' });
-        $('#form-step-span').html('Step ' + step + ' of 3');
+        $('#form-step-span').html('Passo ' + step + ' de 4');
         $('#form-step-span').attr('step', step);
     }
 
@@ -113,7 +116,6 @@
     });
 
     async function saveInfo() {
-        debugger;
         const flightId = $('input.card-radio:checked').val();
         let birthDate_aux = $('input[name="tbBirthDate"]').val().split('-');
         const birthDate = birthDate_aux[2] + '/' + birthDate_aux[1] + '/' + birthDate_aux[0];

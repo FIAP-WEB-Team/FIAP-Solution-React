@@ -3,7 +3,7 @@ import Button from '../Button';
 
 function Footer() {
     return <div className="fieldset-footer">
-        <span id="form-step-span" step="1">Step 1 of 3</span>
+        <span id="form-step-span" step="1">Passo 1 de 4</span>
         <Button
             type="button"
             label="Proximo"

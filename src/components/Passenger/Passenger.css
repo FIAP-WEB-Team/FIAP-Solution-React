@@ -1,0 +1,8 @@
+#flight-form-p-3 input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 30px 0px 30px 40px;
+    padding: 0px;
+    width: 10%;
+    display: inline-block;
+    align-items: center;
+}
